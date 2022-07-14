@@ -12,6 +12,8 @@ services:
       - ./mysql/conf/my.cnf:/etc/mysql/conf.d:rw
       - ./mysql/data/datavolume:/var/lib/mysql
   cache: # TODO
+    depends_on:
+      - db 
   web: # TODO
     build: ./actix-web
     command: bundle exec rails s -p 3000 -b '0.0.0.0'
