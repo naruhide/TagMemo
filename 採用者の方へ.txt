@@ -1,5 +1,6 @@
 # 使用技術
 Vue.js
+SPA
 
 Actix Web(Rust)
 
