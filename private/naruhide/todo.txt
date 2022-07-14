@@ -17,7 +17,7 @@
 
 
 ■Web
-・actixディレクトリ配下にTagMemoプロジェクトをコピー。
+・actixディレクトリ配下にWindowsで開発したTagMemoプロジェクトを/actix/appとしてコピー。
 
 
 ■パフォーマンス

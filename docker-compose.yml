@@ -17,6 +17,10 @@ services:
     build: ./redis
     depends_on:
       - db 
+    ports:
+      - xxxx:xxxx
+    volumes:
+      - ./redis/conf/redis.conf:/etc/redis/xxxxxxxxx:rw
   web:
     container_name: web
     build: ./actix
@@ -25,7 +29,7 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - ./actix/xxx:/app
+      - ./actix/app:/app
     links:
     - cache
     - db
