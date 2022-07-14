@@ -12,6 +12,7 @@ services:
     volumes:
       - ./mysql/conf/my.cnf:/etc/mysql/conf.d:rw
       - ./mysql/data/datavolume:/var/lib/mysql
+      - ./mysql/schme/init.sql:/xxxxxxxx
   cache:
     container_name: cache
     build: ./redis

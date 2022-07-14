@@ -4,3 +4,4 @@ alias gs='git status'
 alias gpod='git push origin develop'
 
 ■docker
+docker-compose up -d
