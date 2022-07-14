@@ -4,5 +4,4 @@ alias gs='git status'
 alias gcm='git commit -m'
 alias gpod='git push origin develop'
 
-
 ■docker
