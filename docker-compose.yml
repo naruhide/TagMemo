@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_LOGIN_PASS}
+      MYSQL_PORT: 3306
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql/my.cnf:/etc/mysql/conf.d:rw
+      - ./mysql/mysql-datavolume:/var/lib/mysql
+  cache: #TODO
+  web:
+    build: ./actix-web
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes:
+      - ./actix-web/xxx:/myapp
+    ports:
+      - 8080:8080
+    depends_on:
+      - db 
+    entrypoint: "/bin/sh -c 'npm install && npm run start'" # この記述によって、フロントエンドのフレームワーク最大の恩恵であるlive loadがdockerでも使える。ただし、このComposeFileでentrypointを指定すると、Dockerfile内のCMDやENTRYPOINTは無視されるので注意。
+volumes: # このようにトップレベルでvolumesを指定すると、名前付きボリュームになる。
+  mysql-datavolume:

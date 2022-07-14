@@ -1,5 +1,3 @@
 # What is TagMemo?
 
-It's just a memo application.
-
-Try using it for the time being.
+It's just a memo application. Anyway, try using it for the time being.
