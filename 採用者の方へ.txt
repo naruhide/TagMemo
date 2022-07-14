@@ -1,0 +1,6 @@
+# 使用技術
+Vue.js
+
+Actix Web(Rust)
+
+MySQL
