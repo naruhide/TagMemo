@@ -28,5 +28,3 @@ Please install
 4. Open in browser. 
 
 ``` http://localhost:8080/index.html ```
-
-# Getting Started

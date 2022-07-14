@@ -1,7 +1,15 @@
-# 使用技術
-Vue.js
-SPA
+■使用技術
+・Vue.js(JavaScript)
+・Actix Web(Rust)
+・Redis
+・MySQL
 
-Actix Web(Rust)
 
-MySQL
+■特徴
+・SPA
+　　Vue.jsによるシングルページアプリケーション。
+
+・パフォーマンス重視
+　　SPA: メモの登録や削除時に発生し得るコンテナ間通信を極力排除。
+　　Rust: C, C++に匹敵する処理速度。
+　　Redis: データのキャッシュによる速度向上。
