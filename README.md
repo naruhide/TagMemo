@@ -23,7 +23,7 @@ Please install
 
 3. Launch container.
 
-``` docker-compose up -d xxx```
+``` ./start.sh ```
 
 4. Open in browser. 
 
